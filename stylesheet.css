@@ -1,0 +1,100 @@
+ul.navBar {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+ul.navBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navBar li {
+  display: inline-block;
+}
+
+ul.navBar li a.active {
+    background-color: gray;
+}
+
+ul.navBar li a:hover {
+    background-color: #111;
+}
+
+#loginBox, #signUpBox {
+    width: 370px;
+    border: 3px solid black;
+    margin: 5% auto;
+    border-radius: 25px;
+}
+
+#loginBox {
+    height: 315px;
+}
+
+#signUpBox {
+    height: 465px;
+}
+
+.login, .signUp {
+    font-family: verdana;
+    padding: 10px;
+    text-align: center;
+}
+
+h1.login, h1.signUp {
+    padding: 0;
+    margin: 20px;
+    font-size: 26px;
+}
+
+input.login, input.signUp {
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+a.login, a.signUp {
+    color: #333;
+    font-size: 12px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #111;
+    cursor: pointer;
+}
+
+.welcome {
+  text-align: center;
+  padding: 10px;
+}
+
+h1.welcome {
+  margin: 0;
+  font-size: 70px;
+}
+
+p.welcome {
+  margin: 0;
+  font-size: 35px;
+}
+
+button.welcome {
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 30px;
+  border: 1px solid #111;
+}
