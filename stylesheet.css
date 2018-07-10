@@ -98,3 +98,28 @@ button.welcome {
   font-size: 30px;
   border: 1px solid #111;
 }
+
+#passwordBox {
+  height: 300px;
+}
+
+.invalid, .valid {
+  font-size: 20px;
+  text-align: center;
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  content: "✘ ";
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  content: "✓ ";
+}
