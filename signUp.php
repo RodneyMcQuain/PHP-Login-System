@@ -19,7 +19,7 @@
           </div>
 
           <div class="signUp">
-              <input type="password" name="password" class="signUp" placeholder="Password">
+              <input type="password" id="password" name="password" class="signUp" placeholder="Password">
           </div>
 
           <div class="signUp">
@@ -34,6 +34,16 @@
               <a class="signUp" href="index.php">Login</a>
           </div>
       </form>
+
+      <div id="passwordBox">
+        <p class="invalid" id="characterLength">Minimum of 8 Characters</p>
+        <p class="invalid" id="lowercaseLetter">Lowercase Letter</p>
+        <p class="invalid" id="uppercaseLetter">Uppercase Letter</p>
+        <p class="invalid" id="number">Number</p>
+        <p class="invalid" id="symbol">Symbol (?!@#$%^&*)</p>
+      </div>
+
+      <script src="passwordValidator.js"></script>
 
       <?php
           if (isset($_POST['submit'])) {
