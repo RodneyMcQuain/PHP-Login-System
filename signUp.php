@@ -9,7 +9,9 @@
           <h1 class="signUp">Sign Up</p>
       </div>
 
-      <form method="POST">
+      <script src="livePasswordValidator.js"></script>
+
+      <form method="POST" onsubmit="event.preventDefault(); validatePassword();">
           <div class="signUp">
               <input type="text" name="email" class="signUp" placeholder="E-Mail" value="<?php echo isset($_POST['email']) ? $_POST['email'] : '' ?>">
           </div>
@@ -43,7 +45,7 @@
         <p class="invalid" id="symbol">Symbol (?!@#$%^&*)</p>
       </div>
 
-      <script src="passwordValidator.js"></script>
+      <script src="validatePassword.js"></script>
 
       <?php
           if (isset($_POST['submit'])) {
